@@ -1,0 +1,90 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.title{
+    font-size: 20px;
+    font-family: cursive;
+    color: red;
+    -webkit-text-stroke: 0.5px red;
+    -webkit-text-fill-color: black;
+}
+
+.mode{
+    padding: 10px;
+    color: white;
+}
+
+.flex-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(6, 5, 5);
+    background-image: url(https://i.huffpost.com/gen/1240190/thumbs/o-SLIDE-1-570.jpg?1), url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Taj_Mahal_drawing_on_an_Etch-A-Sketch.jpg/640px-Taj_Mahal_drawing_on_an_Etch-A-Sketch.jpg), url(https://pic.blog.plover.com/games/etchasketch/einstein-crop.jpg), url(https://cdn.pocket-lint.com/r/s/320x/assets/images/104730-gadgets-news-feature-best-etch-a-sketch-masterpieces-image10-gxknj4savm.jpg?v1);
+    background-position: left top, left bottom, right top, right bottom;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: 320px 320px;
+}   
+
+.board {
+    width: 80%;
+    height: 80%;
+    display: grid;
+    background-color: white;
+    box-shadow: inset 0 -3em 3em rgba(0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.board:hover {
+    cursor: pointer;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    min-height: 300px;
+    width: 60vw;
+    height: 60vw;
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 0.3em 1.2em;
+    margin: 0 1.5em 0.3em 0;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.2s;
+    background-color: black;
+    color:rgb(255, 255, 255)
+}
+
+button:hover {
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+}
+
+
+
+
